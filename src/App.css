@@ -1,14 +1,74 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.AppHeader {
+  width: 100vw;
+  text-align: center;
+  background-color: #282c34;
+  padding: 2rem;
+  margin-bottom: 2rem;
   color: white;
+}
+
+.App {
+  border: 2px solid #282c34;
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 350px;
+  max-height: 700px;
+  overflow: auto;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  padding: 7px 10px;
+  border: 1px dotted #a25a5a;
+}
+
+input[type="text"] {
+  padding: 4px;
+}
+
+label input {
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  padding: 7px 10px;
+  border: 1px dotted #a25a5a;
+}
+
+.ColumnTitle {
+  text-align: left;
+}
+
+.InStockProduct {
+  color: #1f421f;
+}
+
+.OutOfStockProduct {
+  color: red;
 }

@@ -4,9 +4,14 @@ import "./App.css";
 
 function App() {
   return (
-    <main className="App">
-      <FilterableProductTable products={products} />
-    </main>
+    <>
+      <header className="AppHeader">
+        <h1>A Simple eCommerce App In React</h1>
+      </header>
+      <main className="App">
+        <FilterableProductTable products={products} />
+      </main>
+    </>
   );
 }
 
